@@ -1,0 +1,10 @@
+s0 = serialdev('/dev/tty.usbmodem14101','BaudRate','dataBits','parity','stopBits');
+% serialdev enables matlab to retrieve data from a port on the computer.
+%...Enter info as shown into the function.
+
+
+
+I = read(s0); % function to read in the data. 
+%... Go to file name 'Get_Data.m' to see rest of code.  
+
+disp(I)
